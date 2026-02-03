@@ -2,75 +2,113 @@
 
 <p align="center">
     <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3_coder.png" width="400"/>
-<p>
+</p>
 
 <p align="center">
-    <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3-coder-main.jpg" width="800"/>
-<p>
+    <img src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/swebench_pro.png" width="800"/>
+</p>
 
 <p align="center">
-        💜 <a href="https://chat.qwenlm.ai/"><b>Qwen Chat</b></a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/qwen">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://qwen.ai/blog?id=d927d7d2e59d059045ce758ded34f98c0186d2d7&from=research.research-list">Blog</a> &nbsp&nbsp ｜ &nbsp&nbsp📖 <a href="https://qwen.readthedocs.io/">Documentation</a>
-<br> 
-</a>&nbsp&nbsp | &nbsp&nbsp 🌍 <a href="https://huggingface.co/spaces/Qwen/Qwen3-Coder-WebDev">WebDev</a>&nbsp&nbsp | &nbsp&nbsp💬 <a href="https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png">WeChat (微信)</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD"> Discord</a>&nbsp&nbsp | &nbsp&nbsp 📄 <a href="https://arxiv.org/abs/2505.09388">Arxiv</a>&nbsp&nbsp | &nbsp&nbsp 👽 <a href="https://github.com/QwenLM/qwen-code">Qwen Code</a>
+        💜 <a href="https://chat.qwen.ai/"><b>Qwen Chat</b></a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/qwen">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://qwenlm.github.io/blog/qwen3-coder-next/">Blog</a> &nbsp&nbsp ｜ &nbsp&nbsp📖 <a href="https://qwen.readthedocs.io/">Documentation</a>
+<br>
+🌍 <a href="https://huggingface.co/spaces/Qwen/Qwen3-Coder-WebDev">WebDev</a>&nbsp&nbsp | &nbsp&nbsp💬 <a href="https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png">WeChat (微信)</a>&nbsp&nbsp | &nbsp&nbsp🫨 <a href="https://discord.gg/CV4E9rpNSD"> Discord</a>&nbsp&nbsp | &nbsp&nbsp 📄 <a href="https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf">Arxiv</a>&nbsp&nbsp | &nbsp&nbsp 👽 <a href="https://github.com/QwenLM/qwen-code">Qwen Code</a>
 </p>
 
 Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with `Qwen3-Coder-`, and you will find all you need! Enjoy!
 
-# Latest News
-🔥🔥🔥 Qwen3-Coder-30B-A3B-Instruct has been released, for more information <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/tree/main">here</a>.  
+---
 
-# Qwen3-Coder: Agentic Coding in the World.
+## Table of Contents
+- [Qwen3-Coder-Next: Pushing Small Hybrid Models on Agentic Coding](#qwen3-coder-next-pushing-small-hybrid-models-on-agentic-coding)
+  - [Introduction](#introduction)
+    - [Key Features](#key-features)
+  - [Basic Information](#basic-information)
+  - [Quick Start](#quick-start)
+    - [👉🏻 Chat with Qwen3-Coder](#-chat-with-qwen3-coder)
+      - [Fill in the middle with Qwen3-Coder](#fill-in-the-middle-with-qwen3-coder)
+  - [Use Cases](#use-cases)
+    - [Example: Releasing a Website](#example-releasing-a-website)
+    - [Example: Desktop Tidy](#example-desktop-tidy)
+    - [Example: Zombies vs. Plants](#example-zombies-vs-plants)
+    - [Example: Sound ASCII Art](#example-sound-ascii-art)
+    - [Example: Vibe Checking](#example-vibe-checking)
+    - [Example: Parkour Game](#example-parkour-game)
+  - [Star History](#star-history)
+  - [Citation](#citation)
+  - [Contact Us](#contact-us)
+
+---
+
+# Qwen3-Coder-Next: Pushing Small Hybrid Models on Agentic Coding
 
 ## Introduction
 
-Today, we're announcing Qwen3-Coder, our most agentic code model to date. **Qwen3-Coder** is available in multiple sizes, but we're excited to introduce its most powerful variant first: **Qwen3-Coder-480B-A35B-Instruct** — a 480B-parameter Mixture-of-Experts model with 35B active parameters, offering exceptional performance in both coding and agentic tasks. **Qwen3-Coder-480B-A35B-Instruct** sets new state-of-the-art results among open models on Agentic Coding, Agentic Browser-Use, and Agentic Tool-Use, comparable to Claude Sonnet. 
+We are announcing Qwen3-Coder, our most agentic code model to date. **Qwen3-Coder** is available in multiple sizes, **Qwen3-Coder-480B-A35B-Instruct**, **Qwen3-Coder-30B-A3B-Instruct**, **Qwen3-Coder-Next**, offering exceptional performance in both coding and agentic tasks. 
 
-💻 **Significant Performance**: among open models on **Agentic Coding**, **Agentic Browser-Use**, and other foundational coding tasks, achieving results comparable to Claude Sonnet;
+**Qwen3-Coder-Next**, an open-weight language model designed specifically for coding agents and local development. Built on top of **Qwen3-Next-80B-A3B-Base**, which adopts a novel architecture with hybrid attention and MoE, Qwen3-Coder-Next has been agentically trained at scale on large-scale executable task synthesis, environment interaction, and reinforcement learning, obtaining strong coding and agentic capabilities with significantly lower inference costs.
 
-📚 **Long-context Capabilities**: with native support for **256K** tokens, extendable up to **1M** tokens using Yarn, optimized for repository-scale understanding;
+### Key Features
 
-🛠 **Agentic Coding**: supporting for most platform such as **Qwen Code**, **CLINE**, featuring a specially designed function call format;
+💻 **Efficiency-Performance Tradeoff**: among open models on **Agentic Coding**, **Agentic Browser-Use**, and other foundational coding tasks, achieving results comparable to Claude Sonnet.
 
-## Basic information
+🛠 **Scaling Agentic Coding**: supporting most platforms such as **Qwen Code**, **CLINE**, **Claude Code**, featuring a specially designed function call format;
+
+📚 **Long-context Capabilities**: with native support for **256K** tokens, extendable up to **1M** tokens using Yarn, optimized for repository-scale understanding.
+
+---
+
+
+## Basic Information
 
 1. ✨ Supporting long context understanding and generation with the context length of 256K tokens;
 2. ✨ Supporting 358 coding languages;
+
+<details>
+<summary>Click to view all supported languages</summary>
 ```
 ['ABAP', 'ActionScript', 'Ada', 'Agda', 'Alloy', 'ApacheConf', 'AppleScript', 'Arc', 'Arduino', 'AsciiDoc', 'AspectJ', 'Assembly', 'Augeas', 'AutoHotkey', 'AutoIt', 'Awk', 'Batchfile', 'Befunge', 'Bison', 'BitBake', 'BlitzBasic', 'BlitzMax', 'Bluespec', 'Boo', 'Brainfuck', 'Brightscript', 'Bro', 'C', 'C#', 'C++', 'C2hs Haskell', 'CLIPS', 'CMake', 'COBOL', 'CSS', 'CSV', "Cap'n Proto", 'CartoCSS', 'Ceylon', 'Chapel', 'ChucK', 'Cirru', 'Clarion', 'Clean', 'Click', 'Clojure', 'CoffeeScript', 'ColdFusion', 'ColdFusion CFC', 'Common Lisp', 'Component Pascal', 'Coq', 'Creole', 'Crystal', 'Csound', 'Cucumber', 'Cuda', 'Cycript', 'Cython', 'D', 'DIGITAL Command Language', 'DM', 'DNS Zone', 'Darcs Patch', 'Dart', 'Diff', 'Dockerfile', 'Dogescript', 'Dylan', 'E', 'ECL', 'Eagle', 'Ecere Projects', 'Eiffel', 'Elixir', 'Elm', 'Emacs Lisp', 'EmberScript', 'Erlang', 'F#', 'FLUX', 'FORTRAN', 'Factor', 'Fancy', 'Fantom', 'Forth', 'FreeMarker', 'G-code', 'GAMS', 'GAP', 'GAS', 'GDScript', 'GLSL', 'Genshi', 'Gentoo Ebuild', 'Gentoo Eclass', 'Gettext Catalog', 'Glyph', 'Gnuplot', 'Go', 'Golo', 'Gosu', 'Grace', 'Gradle', 'Grammatical Framework', 'GraphQL', 'Graphviz (DOT)', 'Groff', 'Groovy', 'Groovy Server Pages', 'HCL', 'HLSL', 'HTML', 'HTML+Django', 'HTML+EEX', 'HTML+ERB', 'HTML+PHP', 'HTTP', 'Haml', 'Handlebars', 'Harbour', 'Haskell', 'Haxe', 'Hy', 'IDL', 'IGOR Pro', 'INI', 'IRC log', 'Idris', 'Inform 7', 'Inno Setup', 'Io', 'Ioke', 'Isabelle', 'J', 'JFlex', 'JSON', 'JSON5', 'JSONLD', 'JSONiq', 'JSX', 'Jade', 'Jasmin', 'Java', 'Java Server Pages', 'JavaScript', 'Julia', 'Jupyter Notebook', 'KRL', 'KiCad', 'Kit', 'Kotlin', 'LFE', 'LLVM', 'LOLCODE', 'LSL', 'LabVIEW', 'Lasso', 'Latte', 'Lean', 'Less', 'Lex', 'LilyPond', 'Linker Script', 'Liquid', 'Literate Agda', 'Literate CoffeeScript', 'Literate Haskell', 'LiveScript', 'Logos', 'Logtalk', 'LookML', 'Lua', 'M', 'M4', 'MAXScript', 'MTML', 'MUF', 'Makefile', 'Mako', 'Maple', 'Markdown', 'Mask', 'Mathematica', 'Matlab', 'Max', 'MediaWiki', 'Metal', 'MiniD', 'Mirah', 'Modelica', 'Module Management System', 'Monkey', 'MoonScript', 'Myghty', 'NSIS', 'NetLinx', 'NetLogo', 'Nginx', 'Nimrod', 'Ninja', 'Nit', 'Nix', 'Nu', 'NumPy', 'OCaml', 'ObjDump', 'Objective-C++', 'Objective-J', 'Octave', 'Omgrofl', 'Opa', 'Opal', 'OpenCL', 'OpenEdge ABL', 'OpenSCAD', 'Org', 'Ox', 'Oxygene', 'Oz', 'PAWN', 'PHP', 'POV-Ray SDL', 'Pan', 'Papyrus', 'Parrot', 'Parrot Assembly', 'Parrot Internal Representation', 'Pascal', 'Perl', 'Perl6', 'Pickle', 'PigLatin', 'Pike', 'Pod', 'PogoScript', 'Pony', 'PostScript', 'PowerShell', 'Processing', 'Prolog', 'Propeller Spin', 'Protocol Buffer', 'Public Key', 'Pure Data', 'PureBasic', 'PureScript', 'Python', 'Python traceback', 'QML', 'QMake', 'R', 'RAML', 'RDoc', 'REALbasic', 'RHTML', 'RMarkdown', 'Racket', 'Ragel in Ruby Host', 'Raw token data', 'Rebol', 'Red', 'Redcode', "Ren'Py", 'RenderScript', 'RobotFramework', 'Rouge', 'Ruby', 'Rust', 'SAS', 'SCSS', 'SMT', 'SPARQL', 'SQF', 'SQL', 'STON', 'SVG', 'Sage', 'SaltStack', 'Sass', 'Scala', 'Scaml', 'Scheme', 'Scilab', 'Self', 'Shell', 'ShellSession', 'Shen', 'Slash', 'Slim', 'Smali', 'Smalltalk', 'Smarty', 'Solidity', 'SourcePawn', 'Squirrel', 'Stan', 'Standard ML', 'Stata', 'Stylus', 'SuperCollider', 'Swift', 'SystemVerilog', 'TOML', 'TXL', 'Tcl', 'Tcsh', 'TeX', 'Tea', 'Text', 'Textile', 'Thrift', 'Turing', 'Turtle', 'Twig', 'TypeScript', 'Unified Parallel C', 'Unity3D Asset', 'Uno', 'UnrealScript', 'UrWeb', 'VCL', 'VHDL', 'Vala', 'Verilog', 'VimL', 'Visual Basic', 'Volt', 'Vue', 'Web Ontology Language', 'WebAssembly', 'WebIDL', 'X10', 'XC', 'XML', 'XPages', 'XProc', 'XQuery', 'XS', 'XSLT', 'Xojo', 'Xtend', 'YAML', 'YANG', 'Yacc', 'Zephir', 'Zig', 'Zimpl', 'desktop', 'eC', 'edn', 'fish', 'mupad', 'nesC', 'ooc', 'reStructuredText', 'wisp', 'xBase']
 ```
+</details>
+
 3. ✨ Retain strengths in math and general capabilities from base model.
 
 > [!Important]
 > 
-> Qwen3-coder function calling relies on our new tool parser `qwen3coder_tool_parser.py` <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/main/qwen3coder_tool_parser.py">here</a>.
+> Qwen3-Coder function calling relies on our new tool parser in both **SGLang** and **vLLM** <a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/">here</a>.
 >
 > We updated both the special tokens and their corresponding token ids, in order to maintain consistency with Qwen3. Please make sure to use the new tokenizer.
 
 
 | model name                  | type     | length | Download                                                                                                                                                                        |
 |-----------------------------|----------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Qwen3-Coder-Next         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next  ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-Next)                                       |
+| Qwen3-Coder-Next-Base         | base     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next-Base) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-Next-Base)     |
 | Qwen3-Coder-480B-A35B-Instruct         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct  ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-480B-A35B-Instruct)                                       |
-| Qwen3-Coder-480B-A35B-Instruct-FP8         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8)                                       |
 | Qwen3-Coder-30B-A3B-Instruct         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-30B-A3B-Instruct)                                       |
+| Qwen3-Coder-Next-FP8         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next-FP8  ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-Next-FP8)
+| Qwen3-Coder-Next-GGUF         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next-GGUF  ) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-Next-GGUF)                                       |
+| Qwen3-Coder-480B-A35B-Instruct-FP8         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8)                                       |
 | Qwen3-Coder-30B-A3B-Instruct-FP8         | instruct     | 256k    | 🤗 [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8) • 🤖 [ModelScope](https://modelscope.cn/models/Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8)                                       |
 
 
-Detailed performance and introduction are shown in this <a href="https://qwen.ai/blog?id=d927d7d2e59d059045ce758ded34f98c0186d2d7&from=research.research-list"> 📑 blog</a>.
+Detailed performance and introduction are shown in this <a href="https://qwenlm.github.io/blog/qwen3-coder-next/">📑 blog</a>.
+
+---
 
 ## Quick Start
 
 > [!Important]
-> **Qwen3-Coder-480B-A35B-Instruct** are instruction models for chatting;
+> **Qwen3-Coder** are instruct models for chatting;
 >
-> This model supports only non-thinking mode and does not generate ``<think></think>`` blocks in its output. Meanwhile, specifying `enable_thinking=False` is no longer required.**
+> This model supports only non-thinking mode and does not generate `<think></think>` blocks in its output. Meanwhile, specifying `enable_thinking=False` is no longer required.
 >
 ### 👉🏻 Chat with Qwen3-Coder
-You can just write several lines of code with `transformers` to chat with Qwen3-Coder-480B-A35B-Instruct. Essentially, we build the tokenizer and the model with `from_pretrained` method, and we use generate method to perform chatting with the help of chat template provided by the tokenizer. Below is an example of how to chat with **Qwen3-Coder-480B-A35B-Instruct**:
+You can write several lines of code with `transformers` to chat with Qwen3-Coder-Next. Essentially, we build the tokenizer and the model with the `from_pretrained` method, and we use the generate method to perform chatting with the help of the chat template provided by the tokenizer. Below is an example of how to chat with **Qwen3-Coder-Next**:
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+model_name = "Qwen/Qwen3-Coder-Next"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -101,17 +139,17 @@ generated_ids = [
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 ```
 The `apply_chat_template()` function is used to convert the messages into a format that the model can understand.
-The `add_generation_prompt` argument is used to add a generation prompt, which refers to `<|im_start|>assistant\n` to the input. Notably, we apply ChatML template for chat models following our previous practice.
-The `max_new_tokens` argument is used to set the maximum length of the response. The `tokenizer.batch_decode()` function is used to decode the response. In terms of the input, the above messages is an example to show how to format your dialog history and system prompt.
-You can use the other size of instruct model in the same way.
+The `add_generation_prompt` argument is used to add a generation prompt, which refers to `<|im_start|>assistant\n` to the input. Notably, we apply the ChatML template for chat models following our previous practice.
+The `max_new_tokens` argument is used to set the maximum length of the response. The `tokenizer.batch_decode()` function is used to decode the response. In terms of the input, the above messages are an example to show how to format your dialog history and system prompt.
+You can use the other sizes of instruct models in the same way.
 
 
 #### Fill in the middle with Qwen3-Coder
 
-The code insertion task, also referred to as the "fill-in-the-middle" challenge, requires the insertion of code segments in a manner that bridges the gaps within a given code context. For an approach aligned with best practices, we recommend adhering to the formatting guidelines outlined in the paper "Efficient Training of Language Models to Fill in the Middle"[[arxiv](https://arxiv.org/abs/2207.14255)]. 
+The code insertion task, also referred to as the "fill-in-the-middle" challenge, requires the insertion of code segments in a manner that bridges the gaps within a given code context. For an approach aligned with best practices, we recommend adhering to the formatting guidelines outlined in the paper "Efficient Training of Language Models to Fill in the Middle" [[arxiv](https://arxiv.org/abs/2207.14255)]. 
 
 > [!Important]
-> It should be noted that FIM is supported in every version of Qwen3-Coder. Qwen3-Coder-480B-A35B-Instruct is shown here as an example.
+> It should be noted that FIM is supported in every version of Qwen3-Coder. Qwen3-Coder-Next is shown here as an example.
 >
 
 The prompt should be structured as follows:
@@ -125,8 +163,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # load model
 device = "cuda" # the device to load the model onto
 
-TOKENIZER = AutoTokenizer.from_pretrained("Qwen/Qwen3-Coder-480B-A35B-Instruct")
-MODEL = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-Coder-480B-A35B-Instruct", device_map="auto").eval()
+TOKENIZER = AutoTokenizer.from_pretrained("Qwen/Qwen3-Coder-Next")
+MODEL = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-Coder-Next", device_map="auto").eval()
 
 
 input_text = """<|fim_prefix|>def quicksort(arr):
@@ -161,205 +199,199 @@ print(f"Prompt: {input_text}\n\nGenerated text: {output_text}")
 ```
 
 ## Use Cases
-### Example: Physics-Based Chimney Demolition Simulation with Controlled Explosion
+
+### Example: Releasing a Website
 
 <details>
-<summary>Prompt with Qwen Chat Web Dev </summary>
+<summary>Prompt with OpenClaw </summary>
 
 ```
-使用 three.js, cannon-es.js 生成一个震撼的3D建筑拆除演示。
-
-## 场景设置：
-- 地面是一个深灰色混凝土平面，尺寸80*80，
-- 所有物体严格遵循现实物理规则，包括重力、摩擦力、碰撞检测和动量守恒
-
-## 建筑结构：
-- 一座圆形高层建筑，周长对应20个方块
-- 建筑总高度60个方块
-- 每层采用砖砌结构，方块与砖结构建筑一致, 错开50%排列，增强结构稳定性
-- 建筑外墙使用米色方块
-- **重要：方块初始排列时必须确保紧密贴合，无间隙，可以通过轻微重叠或调整半径来实现**
-- **重要：建筑初始化完成后，所有方块应该处于物理"睡眠"状态，确保建筑在爆炸前保持完美的静止状态，不会因重力而下沉或松散**
-- 建筑砖块之间使用粘性材料填充（不可见），通过高摩擦力（0.8+）和低弹性（0.05以下）来模拟粘合效果
-- 砖块在建筑倒塌瞬间不会散掉，而是建筑作为一个整体倒在地面的时候才因受力过大而散掉
-
-## 定向爆破系统：
-- 在建筑的第1层的最右侧方块附近安装爆炸装置（不可见）
-- 提供操作按钮点击爆炸
-- **爆炸时唤醒所有相关方块的物理状态**
-- 爆炸点产生半径2的强力冲击波，冲击波影响到的方块, 受到2-5单位的冲击力
-
-## 建筑稳定性要求：
-- **确保建筑在未爆炸时完全静止，无任何晃动或下沉**
-- **物理世界初始化后给建筑几个物理步骤来自然稳定，或使用睡眠机制**
-- **方块间的接触材料应具有高摩擦力和极低弹性，模拟砖块间的砂浆粘合**
-
-## 震撼的倒塌效果：
-- 方块在爆炸冲击下不仅飞散，还会在空中翻滚和碰撞
-- 烟尘会随着建筑倒塌逐渐扩散，营造真实的拆除现场氛围
-
-## 增强的视觉效果：
-- 添加环境光照变化：爆炸瞬间亮度激增，然后被烟尘遮挡变暗
-- 粒子系统包括：烟雾、灰尘
-
-## 技术要求：
-- 粒子系统用于烟雾和灰尘效果
-- 所有代码集成在单个HTML文件中，包含必要的CSS样式
-- 添加简单的UI控制：重置按钮、相机角度切换, 爆炸按钮, 鼠标左键控制摄像机角度，右键控制摄像机位置，滚轮控制摄像机焦距
+next week we will release new coder model, can you collect the history of qwen coder and write a web page, the release the website with the nginx, you can seach how to do this in alibaba cloud linux first
 ```
 
 </details>
 
 <p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo1.mp4">
-    <img src="assets/usage_demo_example1.png" width="400" />
+    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/openclaw/claw_mix.mp4">
+    <img src="assets/qwen3-coder-next-demo/openclaw.png" width="400" />
     </a>
-<p >
+</p>
 
-### Example: Multicolor and Interactive Animation
+
+### Example: Desktop Tidy
 
 <details>
-<summary>Prompt with Cline [act mode] </summary>
+<summary>Prompt with Qwen Code </summary>
 
 ```
-Create an amazing animation multicolor and interactive using p5js
-
-use this cdn:
-https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.min.js
+Please tidy up my desk.
 ```
 </details>
 
 <p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo2.mp4">
-    <img src="assets/usage_demo_example2.png" width="400" />
+    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/qwencode/exp-tidy-desktop.mp4">
+    <img src="assets/qwen3-coder-next-demo/tidy_desktop.png" width="400" />
     </a>
-<p >
+</p>
 
-### Example: 3D Google Earth
+### Example: Zombies vs. Plants
 
 <details>
-<summary>Prompt with Qwen Chat Web Dev </summary>
+<summary>Prompt with Claude Code </summary>
 
 ```
-To create a 3D Google Earth, you need to load the terrain map correctly. You can use any online resource. The code is written into an HTML file.
+帮我实现《僵尸大战植物》网页游戏
+
+【核心机制】
+- 反向塔防：玩家扮演僵尸方，从地图右侧（部署区）召唤僵尸向左进攻
+- 资源循环：初始300脑子点数，僵尸吃掉植物返还100点，形成经济循环
+- 倒计时制：120秒内清除所有植物获胜，超时失败
+
+【地图规格】
+- 5行9列网格，右侧3列为可部署区域（红色高亮标识）
+- 每格100x100像素，草地纹理交替渲染
+- 坐标系：左侧为植物防线，右侧为僵尸出生点
+
+【单位系统】
+僵尸方（右侧购买）：
+- 普通僵尸：50脑，100HP，0.5速，标准单位
+- 路障僵尸：100脑，200HP，0.5速，中期肉盾  
+- 铁桶僵尸：150脑，400HP，0.3速，重型坦克
+- 冲刺僵尸：80脑，80HP，1.2速，快速突进
+
+植物方（左侧随机初始部署12个）：
+- 豌豆射手：100HP，20伤/发，2秒间隔，直线射击
+- 双发射手：120HP，20伤/发，1秒间隔，火力压制
+- 坚果墙：300HP，0伤，纯肉盾阻挡
+- 向日葵：80HP，0伤，经济单位（纯干扰）
+
+【战斗逻辑】
+- 碰撞检测：僵尸到达植物50px内触发啃食状态，停止移动
+- 伤害结算：僵尸30帧/次咬击（0.5秒），植物射出弹道物理
+- 击毁反馈：植物死亡时生成"+100"飘字特效与粒子爆炸
+- 路径AI：同格僵尸队列不重叠，植物优先攻击横向最近目标
+
+【交互设计】
+- 右侧卡片式UI：显示僵尸图标、名称、脑子消耗
+- 资源不足时卡片置灰并自动切换可选类型
+- 鼠标悬停部署区显示半透明预览圈
+- 实时血条：实体头顶显示绿/黄/红三色血槽
+
+【胜利条件】
+- 胜利：plants.length === 0 && timeLeft > 0
+- 失败：timeLeft === 0 || (可选)僵尸全灭且脑子为0
 ```
 
 </details>
 
 <p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo3.mp4">
-    <img src="assets/usage_demo_example3.png" width="400" />
+    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/claudecode/cc_zombine_vs_plants.mp4">
+    <img src="assets/qwen3-coder-next-demo/zombiesvsplants.png" width="400" />
     </a>
-<p >
+</p>
 
-### Example: Testing Your WPM with a Famous Quote 
+### Example: Sound ASCII Art
+
+<details>
+<summary>Prompt with Cline </summary>
+
+```
+Build an interactive ASCII art drawing tool with sound feedback. The application should:
+ 
+1. Create a canvas where users can draw by clicking and dragging
+2. Place different ASCII characters or symbols when the user draws
+3. Play corresponding musical notes when each character is placed
+4. Include multiple pattern sets with different characters and
+corresponding note scales
+5. Add a pattern switcher button to cycle through different
+character/sound themes
+6. Include a clear button to reset the canvas
+7. Support both mouse and touch input for mobile compatibility
+ 
+The application should be creative and fun to use, creating an audio-visual experience where patterns of characters create both visual art and musical patterns. Ensure the musical notes are harmonious when played in sequence.
+```
+
+</details>
+
+<p align="center">
+    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/cline/sound_art.mp4">
+    <img src="assets/qwen3-coder-next-demo/sound_art.png" width="400" />
+    </a>
+</p>
+
+### Example: Vibe Checking
 
 
 <details>
-<summary> Prompt with Qwen-Code CLI </summary>
+<summary> Prompt with Browser Use Agent </summary>
 
 ```
-Create an interesting typing game with a keyboard in the lower middle of the screen and some famous articles in the upper middle. When the user types a word correctly, a cool reaction should be given to encourage him. Design a modern soft color scheme inspired by macarons. Come up with a very creative solution first, and then start writing code.
-The game should be able to support typing, and you need to neglect upcase and lowercase.
+Vibe test this website. Click around, try things, report what's broken.
 ```
 </details>
 
 <p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo4.mp4">
-    <img src="assets/usage_demo_example4.png" width="400" />
+    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/bua/vibe.mp4">
+    <img src="assets/qwen3-coder-next-demo/vibing_check.png" width="400" />
     </a>
-<p >
+</p>
 
-### Example: Bouncing Ball in Rotation Hypercube
+### Example: Parkour Game
 
 
 <details>
 <summary> Prompt with Qwen Chat Web Dev </summary>
 
 ```
-Make a page in HTML that shows an animation of a ball bouncing in a rotating hypercube
+Create an interactive real-time particle system using HTML5 Canvas:
+
+Core Features:
+- Render 800-1200 animated particles with physics-based movement
+- Mouse cursor exerts attractive/repulsive force on nearby particles
+- Click to toggle between attraction and repulsion modes
+- Particles respond with smooth acceleration and velocity calculations
+
+Technical Requirements:
+- Use requestAnimationFrame for optimal performance
+- Implement force calculation based on distance from cursor
+- Add visual feedback: particle glow, color variation, and fade effects
+- Include performance monitoring (FPS counter)
+
+Deliverables:
+- Single HTML file with embedded CSS and JavaScript
+- Clean, commented code following best practices
+- Responsive design compatible with modern browsers
 ```
 </details>
 
 <p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo5.mp4">
-    <img src="assets/usage_demo_example5.png" width="400" />
+    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/WebDev/chico_paredao.mp4">
+    <img src="assets/qwen3-coder-next-demo/parkourgame.png" width="400" />
     </a>
-<p >
-
-### Example: Solar System Simulation
+</p>
 
 
-<details>
-<summary> Prompt with Cline [act mode] </summary>
-
-```
-write a web page to show the solar system simulation
-```
-</details>
-
-
-<p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo6.mp4">
-    <img src="assets/usage_demo_example6.png" width="400" />
-    </a>
-<p >
-
-### Example: DUET Game
-
-
-<details>
-<summary> Prompt with Cline [act mode] </summary>
-
-```
-Create a complete, single-file HTML game with CSS and JavaScript. The game is inspired by "Duet".
-
-Gameplay:
-
-There are two balls, one red and one blue, rotating around a central point.
-The player uses the 'A' and 'D' keys to rotate them counter-clockwise and clockwise.
-White rectangular obstacles move down from the top of the screen.
-The player must rotate the balls to avoid hitting the obstacles.
-If a ball hits an obstacle, the game is over.
-Visuals:
-
-Make the visual effects amazing.
-Use a dark background with neon glowing effects for the balls and obstacles.
-Animations should be very smooth.
-```
-</details>
-
-
-<p align="center">
-    <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo7.mp4">
-    <img src="assets/usage_demo_example7.png" width="400" />
-    </a>
-<p >
-
+---
 
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=QwenLM/Qwen3-Coder&type=Date)](https://star-history.com/#QwenLM/Qwen3-Coder&Date)
 
+---
+
 ## Citation
+
 If you find our work helpful, feel free to give us a cite.
 
 ```bibtex
-@misc{qwen3technicalreport,
-      title={Qwen3 Technical Report}, 
-      author={Qwen Team},
-      year={2025},
-      eprint={2505.09388},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.09388},
-}
-@article{hui2024qwen2,
-  title={Qwen2. 5-Coder Technical Report},
-  author={Hui, Binyuan and Yang, Jian and Cui, Zeyu and Yang, Jiaxi and Liu, Dayiheng and Zhang, Lei and Liu, Tianyu and Zhang, Jiajun and Yu, Bowen and Dang, Kai and others},
-  journal={arXiv preprint arXiv:2409.12186},
-  year={2024}
+@techreport{qwen_qwen3_coder_next_tech_report,
+  title        = {Qwen3-Coder-Next Technical Report},
+  author       = {{Qwen Team}},
+  url          = {https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf},
+  note         = {Accessed: 2026-02-03}
 }
 ```
+
+---
 
 ## Contact Us
 If you are interested to leave a message to either our research team or product team, join our [Discord](https://discord.gg/z3GAxXZ9Ce) or [WeChat groups](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png)!
