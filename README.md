@@ -211,7 +211,7 @@ next week we will release new coder model, can you collect the history of qwen c
 </details>
 
 <p align="center">
-    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/openclaw/claw_mix.mp4">
+    <a href="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/openclaw/claw_mix.mp4">
     <img src="assets/qwen3-coder-next-demo/openclaw.png" width="400" />
     </a>
 </p>
@@ -228,7 +228,7 @@ Please tidy up my desk.
 </details>
 
 <p align="center">
-    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/qwencode/exp-tidy-desktop.mp4">
+    <a href="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/qwencode/exp-tidy-desktop.mp4">
     <img src="assets/qwen3-coder-next-demo/tidy_desktop.png" width="400" />
     </a>
 </p>
@@ -284,7 +284,7 @@ Please tidy up my desk.
 </details>
 
 <p align="center">
-    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/claudecode/cc_zombine_vs_plants.mp4">
+    <a href="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/claudecode/cc_zombine_vs_plants.mp4">
     <img src="assets/qwen3-coder-next-demo/zombiesvsplants.png" width="400" />
     </a>
 </p>
@@ -313,7 +313,7 @@ The application should be creative and fun to use, creating an audio-visual expe
 </details>
 
 <p align="center">
-    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/cline/sound_art.mp4">
+    <a href="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/cline/sound_art.mp4">
     <img src="assets/qwen3-coder-next-demo/sound_art.png" width="400" />
     </a>
 </p>
@@ -330,7 +330,7 @@ Vibe test this website. Click around, try things, report what's broken.
 </details>
 
 <p align="center">
-    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/bua/vibe.mp4">
+    <a href="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/bua/vibe.mp4">
     <img src="assets/qwen3-coder-next-demo/vibing_check.png" width="400" />
     </a>
 </p>
@@ -364,7 +364,7 @@ Deliverables:
 </details>
 
 <p align="center">
-    <a href="http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/WebDev/chico_paredao.mp4">
+    <a href="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3-Coder-Next/WebDev/chico_paredao.mp4">
     <img src="assets/qwen3-coder-next-demo/parkourgame.png" width="400" />
     </a>
 </p>
