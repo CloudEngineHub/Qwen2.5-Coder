@@ -19,7 +19,6 @@ Visit our Hugging Face or ModelScope organization (click links above), search ch
 ---
 
 ## Table of Contents
-- [Qwen3-Coder-Next: Pushing Small Hybrid Models on Agentic Coding](#qwen3-coder-next-pushing-small-hybrid-models-on-agentic-coding)
   - [Introduction](#introduction)
     - [Key Features](#key-features)
   - [Basic Information](#basic-information)
